@@ -1,0 +1,1726 @@
+[
+  {
+    "timestamp": "2026-08-17T18:23:08.596274",
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "status": "SUCCESS",
+    "duration_seconds": 4.04,
+    "fetched_urls": [
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_dev_org.htm",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"
+    ],
+    "verification_notes": [
+      "Source https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_dev_org.htm fetch check: Fetch error: HTTP Error 403: Forbidden",
+      "Source https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm verified live (62 chars extracted)."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:23:13.982836",
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "status": "SUCCESS",
+    "duration_seconds": 5.38,
+    "fetched_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/api/private-apps"
+    ],
+    "verification_notes": [
+      "Source https://developers.hubspot.com/docs/api/overview verified live (1000 chars extracted).",
+      "Source https://developers.hubspot.com/docs/api/private-apps verified live (1000 chars extracted)."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:23:21.585936",
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "status": "SUCCESS",
+    "duration_seconds": 7.6,
+    "fetched_urls": [
+      "https://developers.pipedrive.com/docs/api/v1",
+      "https://pipedrive.readme.io/docs/core-api-concepts"
+    ],
+    "verification_notes": [
+      "Source https://developers.pipedrive.com/docs/api/v1 verified live (1000 chars extracted).",
+      "Source https://pipedrive.readme.io/docs/core-api-concepts fetch check: Fetch error: HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:25:17.543233",
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "status": "SUCCESS",
+    "duration_seconds": 4.11,
+    "fetched_urls": [
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_dev_org.htm",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "SALESFORCE_CREATE_ACCOUNT",
+      "SALESFORCE_SEARCH_RECORDS",
+      "SALESFORCE_UPDATE_LEAD"
+    ],
+    "inspection_logs": [
+      "[Failed] https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_dev_org.htm: Inspection error: HTTP Error 403: Forbidden",
+      "[Browser/HTTP Inspection] https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm: 62 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:25:24.056382",
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "status": "SUCCESS",
+    "duration_seconds": 6.51,
+    "fetched_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/api/private-apps"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "HUBSPOT_CREATE_CONTACT",
+      "HUBSPOT_GET_DEALS",
+      "HUBSPOT_UPDATE_COMPANY"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.hubspot.com/docs/api/overview: 1318 chars extracted.",
+      "[Browser/HTTP Inspection] https://developers.hubspot.com/docs/api/private-apps: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:25:26.855657",
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "status": "SUCCESS",
+    "duration_seconds": 2.8,
+    "fetched_urls": [
+      "https://developers.pipedrive.com/docs/api/v1",
+      "https://pipedrive.readme.io/docs/core-api-concepts"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "PIPEDRIVE_ADD_DEAL",
+      "PIPEDRIVE_GET_PERSONS",
+      "PIPEDRIVE_UPDATE_STAGE"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.pipedrive.com/docs/api/v1: 2000 chars extracted.",
+      "[Failed] https://pipedrive.readme.io/docs/core-api-concepts: Inspection error: HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:34:11.716122",
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "status": "SUCCESS",
+    "duration_seconds": 4.69,
+    "fetched_urls": [
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "SALESFORCE_CREATE_ACCOUNT",
+      "SALESFORCE_SEARCH_RECORDS",
+      "SALESFORCE_UPDATE_LEAD"
+    ],
+    "inspection_logs": [
+      "[Failed] https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm: Inspection error: HTTP Error 403: Forbidden",
+      "[Browser/HTTP Inspection] https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm: 62 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:34:17.803040",
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "status": "SUCCESS",
+    "duration_seconds": 6.08,
+    "fetched_urls": [
+      "https://developers.hubspot.com/docs/api/overview",
+      "https://developers.hubspot.com/docs/api/private-apps"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "HUBSPOT_CREATE_CONTACT",
+      "HUBSPOT_GET_DEALS",
+      "HUBSPOT_UPDATE_COMPANY"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.hubspot.com/docs/api/overview: 1318 chars extracted.",
+      "[Browser/HTTP Inspection] https://developers.hubspot.com/docs/api/private-apps: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:34:21.832356",
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "status": "SUCCESS",
+    "duration_seconds": 4.02,
+    "fetched_urls": [
+      "https://developers.pipedrive.com/docs/api/v1",
+      "https://pipedrive.readme.io/docs"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "PIPEDRIVE_ADD_DEAL",
+      "PIPEDRIVE_GET_PERSONS",
+      "PIPEDRIVE_UPDATE_STAGE"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.pipedrive.com/docs/api/v1: 2000 chars extracted.",
+      "[Browser/HTTP Inspection] https://pipedrive.readme.io/docs: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:29.578734",
+    "app_id": 1,
+    "app_name": "Salesforce",
+    "status": "SUCCESS",
+    "duration_seconds": 7.63,
+    "fetched_urls": [
+      "https://salesforce.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "SALESFORCE_CREATE_ACCOUNT",
+      "SALESFORCE_SEARCH_RECORDS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://salesforce.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:32.407661",
+    "app_id": 2,
+    "app_name": "HubSpot",
+    "status": "SUCCESS",
+    "duration_seconds": 2.83,
+    "fetched_urls": [
+      "https://hubspot.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "HUBSPOT_CREATE_CONTACT",
+      "HUBSPOT_GET_DEALS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://hubspot.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:34.889777",
+    "app_id": 3,
+    "app_name": "Pipedrive",
+    "status": "SUCCESS",
+    "duration_seconds": 2.48,
+    "fetched_urls": [
+      "https://pipedrive.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "PIPEDRIVE_ADD_DEAL",
+      "PIPEDRIVE_GET_PERSONS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://pipedrive.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:36.363023",
+    "app_id": 4,
+    "app_name": "Attio",
+    "status": "SUCCESS",
+    "duration_seconds": 1.47,
+    "fetched_urls": [
+      "https://attio.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://attio.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:37.793792",
+    "app_id": 5,
+    "app_name": "Twenty",
+    "status": "SUCCESS",
+    "duration_seconds": 1.42,
+    "fetched_urls": [
+      "https://twenty.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://twenty.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:40.489849",
+    "app_id": 6,
+    "app_name": "Podio",
+    "status": "SUCCESS",
+    "duration_seconds": 2.69,
+    "fetched_urls": [
+      "https://podio.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://podio.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:46.156425",
+    "app_id": 7,
+    "app_name": "Zoho CRM",
+    "status": "SUCCESS",
+    "duration_seconds": 5.66,
+    "fetched_urls": [
+      "https://zoho.com/crm"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://zoho.com/crm: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:47.269782",
+    "app_id": 8,
+    "app_name": "Close",
+    "status": "SUCCESS",
+    "duration_seconds": 1.11,
+    "fetched_urls": [
+      "https://close.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://close.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:49.938174",
+    "app_id": 9,
+    "app_name": "Copper",
+    "status": "SUCCESS",
+    "duration_seconds": 2.66,
+    "fetched_urls": [
+      "https://copper.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://copper.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:52.567789",
+    "app_id": 10,
+    "app_name": "DealCloud",
+    "status": "SUCCESS",
+    "duration_seconds": 2.62,
+    "fetched_urls": [
+      "https://api.docs.dealcloud.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://api.docs.dealcloud.com: 1728 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:55.324302",
+    "app_id": 11,
+    "app_name": "Zendesk",
+    "status": "SUCCESS",
+    "duration_seconds": 2.75,
+    "fetched_urls": [
+      "https://zendesk.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "ZENDESK_CREATE_TICKET",
+      "ZENDESK_SEARCH_TICKETS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://zendesk.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:37:58.420561",
+    "app_id": 12,
+    "app_name": "Intercom",
+    "status": "SUCCESS",
+    "duration_seconds": 3.09,
+    "fetched_urls": [
+      "https://intercom.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "INTERCOM_CREATE_CONTACT",
+      "INTERCOM_SEND_MESSAGE"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://intercom.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:00.309666",
+    "app_id": 13,
+    "app_name": "Freshdesk",
+    "status": "SUCCESS",
+    "duration_seconds": 1.88,
+    "fetched_urls": [
+      "https://freshdesk.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "FRESHDESK_CREATE_TICKET"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://freshdesk.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:02.447877",
+    "app_id": 14,
+    "app_name": "Front",
+    "status": "SUCCESS",
+    "duration_seconds": 2.13,
+    "fetched_urls": [
+      "https://front.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://front.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:04.116947",
+    "app_id": 15,
+    "app_name": "Pylon",
+    "status": "SUCCESS",
+    "duration_seconds": 1.66,
+    "fetched_urls": [
+      "https://usepylon.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://usepylon.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:06.557618",
+    "app_id": 16,
+    "app_name": "LiveAgent",
+    "status": "SUCCESS",
+    "duration_seconds": 2.43,
+    "fetched_urls": [
+      "https://liveagent.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://liveagent.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:09.760394",
+    "app_id": 17,
+    "app_name": "Plain",
+    "status": "SUCCESS",
+    "duration_seconds": 3.19,
+    "fetched_urls": [
+      "https://plain.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://plain.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:11.619507",
+    "app_id": 18,
+    "app_name": "Help Scout",
+    "status": "SUCCESS",
+    "duration_seconds": 1.85,
+    "fetched_urls": [
+      "https://helpscout.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://helpscout.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:13.401559",
+    "app_id": 19,
+    "app_name": "Gorgias",
+    "status": "SUCCESS",
+    "duration_seconds": 1.77,
+    "fetched_urls": [
+      "https://gorgias.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://gorgias.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:16.086995",
+    "app_id": 20,
+    "app_name": "Gladly",
+    "status": "SUCCESS",
+    "duration_seconds": 2.68,
+    "fetched_urls": [
+      "https://gladly.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://gladly.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:18.146487",
+    "app_id": 21,
+    "app_name": "Slack",
+    "status": "SUCCESS",
+    "duration_seconds": 2.05,
+    "fetched_urls": [
+      "https://slack.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "SLACK_SEND_MESSAGE",
+      "SLACK_POST_CHANNEL"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://slack.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:23.001801",
+    "app_id": 22,
+    "app_name": "Twilio",
+    "status": "SUCCESS",
+    "duration_seconds": 4.85,
+    "fetched_urls": [
+      "https://twilio.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "TWILIO_SEND_SMS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://twilio.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:26.946505",
+    "app_id": 23,
+    "app_name": "Zoho Cliq",
+    "status": "SUCCESS",
+    "duration_seconds": 3.94,
+    "fetched_urls": [
+      "https://zoho.com/cliq"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://zoho.com/cliq: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:29.391335",
+    "app_id": 24,
+    "app_name": "Lark (Larksuite)",
+    "status": "SUCCESS",
+    "duration_seconds": 2.43,
+    "fetched_urls": [
+      "https://open.larksuite.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://open.larksuite.com: 9 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:31.606940",
+    "app_id": 25,
+    "app_name": "Pumble",
+    "status": "SUCCESS",
+    "duration_seconds": 2.21,
+    "fetched_urls": [
+      "https://pumble.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://pumble.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:33.977898",
+    "app_id": 26,
+    "app_name": "Discord",
+    "status": "SUCCESS",
+    "duration_seconds": 2.36,
+    "fetched_urls": [
+      "https://discord.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "DISCORD_SEND_MESSAGE"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://discord.com: 1833 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:35.566922",
+    "app_id": 27,
+    "app_name": "Telegram",
+    "status": "SUCCESS",
+    "duration_seconds": 1.58,
+    "fetched_urls": [
+      "https://core.telegram.org"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://core.telegram.org: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:37.791176",
+    "app_id": 28,
+    "app_name": "WhatsApp Business",
+    "status": "SUCCESS",
+    "duration_seconds": 2.22,
+    "fetched_urls": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://developers.facebook.com/docs/whatsapp: Inspection error: HTTP Error 400: Bad Request"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:39.283575",
+    "app_id": 29,
+    "app_name": "Aircall",
+    "status": "SUCCESS",
+    "duration_seconds": 1.48,
+    "fetched_urls": [
+      "https://aircall.io"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://aircall.io: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:41.876353",
+    "app_id": 30,
+    "app_name": "Vonage",
+    "status": "SUCCESS",
+    "duration_seconds": 2.58,
+    "fetched_urls": [
+      "https://developer.vonage.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.vonage.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:43.541108",
+    "app_id": 31,
+    "app_name": "Google Ads",
+    "status": "SUCCESS",
+    "duration_seconds": 1.66,
+    "fetched_urls": [
+      "https://developers.google.com/google-ads"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.google.com/google-ads: 1239 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:44.840126",
+    "app_id": 32,
+    "app_name": "Meta Ads",
+    "status": "SUCCESS",
+    "duration_seconds": 1.29,
+    "fetched_urls": [
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://developers.facebook.com/docs/marketing-apis: Inspection error: HTTP Error 400: Bad Request"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:46.252326",
+    "app_id": 33,
+    "app_name": "LinkedIn Ads",
+    "status": "SUCCESS",
+    "duration_seconds": 1.4,
+    "fetched_urls": [
+      "https://learn.microsoft.com/linkedin/marketing"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://learn.microsoft.com/linkedin/marketing: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:47.412444",
+    "app_id": 34,
+    "app_name": "GoHighLevel",
+    "status": "SUCCESS",
+    "duration_seconds": 1.15,
+    "fetched_urls": [
+      "https://highlevel.stoplight.io"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://highlevel.stoplight.io: 9 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:48.799339",
+    "app_id": 35,
+    "app_name": "Mailchimp",
+    "status": "SUCCESS",
+    "duration_seconds": 1.37,
+    "fetched_urls": [
+      "https://mailchimp.com/developer"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "MAILCHIMP_ADD_MEMBER",
+      "MAILCHIMP_GET_CAMPAIGNS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://mailchimp.com/developer: 1995 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:51.534806",
+    "app_id": 36,
+    "app_name": "Klaviyo",
+    "status": "SUCCESS",
+    "duration_seconds": 2.72,
+    "fetched_urls": [
+      "https://developers.klaviyo.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "KLAVIYO_CREATE_PROFILE",
+      "KLAVIYO_GET_METRICS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.klaviyo.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:54.174551",
+    "app_id": 37,
+    "app_name": "systeme.io",
+    "status": "SUCCESS",
+    "duration_seconds": 2.63,
+    "fetched_urls": [
+      "https://systeme.io"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://systeme.io: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:56.580842",
+    "app_id": 38,
+    "app_name": "Pinterest",
+    "status": "SUCCESS",
+    "duration_seconds": 2.39,
+    "fetched_urls": [
+      "https://developers.pinterest.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.pinterest.com: 1147 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:38:57.272546",
+    "app_id": 39,
+    "app_name": "Threads (Meta)",
+    "status": "SUCCESS",
+    "duration_seconds": 0.68,
+    "fetched_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://developers.facebook.com/docs/threads: Inspection error: HTTP Error 400: Bad Request"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:02.617872",
+    "app_id": 40,
+    "app_name": "SendGrid",
+    "status": "SUCCESS",
+    "duration_seconds": 5.33,
+    "fetched_urls": [
+      "https://sendgrid.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://sendgrid.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:05.107418",
+    "app_id": 41,
+    "app_name": "Shopify",
+    "status": "SUCCESS",
+    "duration_seconds": 2.48,
+    "fetched_urls": [
+      "https://shopify.dev"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "SHOPIFY_GET_PRODUCTS",
+      "SHOPIFY_CREATE_ORDER"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://shopify.dev: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:07.795289",
+    "app_id": 42,
+    "app_name": "WooCommerce",
+    "status": "SUCCESS",
+    "duration_seconds": 2.68,
+    "fetched_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://woocommerce.com/document/woocommerce-rest-api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:11.703841",
+    "app_id": 43,
+    "app_name": "BigCommerce",
+    "status": "SUCCESS",
+    "duration_seconds": 3.89,
+    "fetched_urls": [
+      "https://developer.bigcommerce.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.bigcommerce.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:12.230476",
+    "app_id": 44,
+    "app_name": "Salesforce Commerce Cloud",
+    "status": "SUCCESS",
+    "duration_seconds": 0.51,
+    "fetched_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://developer.salesforce.com/docs/commerce: Inspection error: HTTP Error 403: Forbidden"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:12.853457",
+    "app_id": 45,
+    "app_name": "Magento (Adobe Commerce)",
+    "status": "SUCCESS",
+    "duration_seconds": 0.61,
+    "fetched_urls": [
+      "https://developer.adobe.com/commerce"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.adobe.com/commerce: 1632 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:13.466977",
+    "app_id": 46,
+    "app_name": "Squarespace",
+    "status": "SUCCESS",
+    "duration_seconds": 0.6,
+    "fetched_urls": [
+      "https://developers.squarespace.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.squarespace.com: 1964 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:15.443740",
+    "app_id": 47,
+    "app_name": "Ecwid",
+    "status": "SUCCESS",
+    "duration_seconds": 1.96,
+    "fetched_urls": [
+      "https://api-docs.ecwid.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://api-docs.ecwid.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:16.603488",
+    "app_id": 48,
+    "app_name": "Gumroad",
+    "status": "SUCCESS",
+    "duration_seconds": 1.14,
+    "fetched_urls": [
+      "https://gumroad.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://gumroad.com/api: 3 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:19.384966",
+    "app_id": 49,
+    "app_name": "Amazon Selling Partner",
+    "status": "SUCCESS",
+    "duration_seconds": 2.77,
+    "fetched_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer-docs.amazon.com/sp-api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:27.117236",
+    "app_id": 50,
+    "app_name": "fanbasis",
+    "status": "SUCCESS",
+    "duration_seconds": 7.72,
+    "fetched_urls": [
+      "https://fanbasis.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://fanbasis.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:35.354922",
+    "app_id": 51,
+    "app_name": "DataForSEO",
+    "status": "SUCCESS",
+    "duration_seconds": 8.23,
+    "fetched_urls": [
+      "https://docs.dataforseo.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.dataforseo.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:36.560717",
+    "app_id": 52,
+    "app_name": "SE Ranking",
+    "status": "SUCCESS",
+    "duration_seconds": 1.2,
+    "fetched_urls": [
+      "https://seranking.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://seranking.com/api: Inspection error: HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:37.866478",
+    "app_id": 53,
+    "app_name": "Ahrefs",
+    "status": "SUCCESS",
+    "duration_seconds": 1.29,
+    "fetched_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://ahrefs.com/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:42.819119",
+    "app_id": 54,
+    "app_name": "MrScraper",
+    "status": "SUCCESS",
+    "duration_seconds": 4.94,
+    "fetched_urls": [
+      "https://docs.mrscraper.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.mrscraper.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:44.683142",
+    "app_id": 55,
+    "app_name": "Apify",
+    "status": "SUCCESS",
+    "duration_seconds": 1.85,
+    "fetched_urls": [
+      "https://docs.apify.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.apify.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:48.117443",
+    "app_id": 56,
+    "app_name": "Firecrawl",
+    "status": "SUCCESS",
+    "duration_seconds": 3.42,
+    "fetched_urls": [
+      "https://firecrawl.dev"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://firecrawl.dev: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:49.752402",
+    "app_id": 57,
+    "app_name": "Bright Data",
+    "status": "SUCCESS",
+    "duration_seconds": 1.62,
+    "fetched_urls": [
+      "https://brightdata.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://brightdata.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:55.067593",
+    "app_id": 58,
+    "app_name": "Sherlock",
+    "status": "SUCCESS",
+    "duration_seconds": 5.3,
+    "fetched_urls": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://github.com/sherlock-project/sherlock: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:39:58.024882",
+    "app_id": 59,
+    "app_name": "Waterfall.io",
+    "status": "SUCCESS",
+    "duration_seconds": 2.95,
+    "fetched_urls": [
+      "https://waterfall.io"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://waterfall.io: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:01.468944",
+    "app_id": 60,
+    "app_name": "Clay",
+    "status": "SUCCESS",
+    "duration_seconds": 3.43,
+    "fetched_urls": [
+      "https://clay.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://clay.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:04.773576",
+    "app_id": 61,
+    "app_name": "GitHub",
+    "status": "SUCCESS",
+    "duration_seconds": 3.29,
+    "fetched_urls": [
+      "https://docs.github.com/rest"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "GITHUB_CREATE_ISSUE",
+      "GITHUB_LIST_REPOS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.github.com/rest: 1744 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:06.092362",
+    "app_id": 62,
+    "app_name": "Vercel",
+    "status": "SUCCESS",
+    "duration_seconds": 1.3,
+    "fetched_urls": [
+      "https://vercel.com/docs/rest-api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://vercel.com/docs/rest-api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:08.826189",
+    "app_id": 63,
+    "app_name": "Netlify",
+    "status": "SUCCESS",
+    "duration_seconds": 2.71,
+    "fetched_urls": [
+      "https://docs.netlify.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.netlify.com/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:16.701464",
+    "app_id": 64,
+    "app_name": "Cloudflare",
+    "status": "SUCCESS",
+    "duration_seconds": 7.85,
+    "fetched_urls": [
+      "https://developers.cloudflare.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.cloudflare.com/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:18.708583",
+    "app_id": 65,
+    "app_name": "Supabase",
+    "status": "SUCCESS",
+    "duration_seconds": 2.0,
+    "fetched_urls": [
+      "https://supabase.com/docs"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://supabase.com/docs: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:21.209453",
+    "app_id": 66,
+    "app_name": "Neo4j",
+    "status": "SUCCESS",
+    "duration_seconds": 2.48,
+    "fetched_urls": [
+      "https://neo4j.com/docs/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://neo4j.com/docs/api: Inspection error: HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:28.852565",
+    "app_id": 67,
+    "app_name": "Snowflake",
+    "status": "SUCCESS",
+    "duration_seconds": 7.62,
+    "fetched_urls": [
+      "https://docs.snowflake.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.snowflake.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:34.935351",
+    "app_id": 68,
+    "app_name": "MongoDB Atlas",
+    "status": "SUCCESS",
+    "duration_seconds": 6.06,
+    "fetched_urls": [
+      "https://mongodb.com/docs/atlas/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://mongodb.com/docs/atlas/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:37.571331",
+    "app_id": 69,
+    "app_name": "Datadog",
+    "status": "SUCCESS",
+    "duration_seconds": 2.62,
+    "fetched_urls": [
+      "https://docs.datadoghq.com/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.datadoghq.com/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:39.884281",
+    "app_id": 70,
+    "app_name": "Sentry",
+    "status": "SUCCESS",
+    "duration_seconds": 2.27,
+    "fetched_urls": [
+      "https://docs.sentry.io/api"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.sentry.io/api: 1949 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:43.027892",
+    "app_id": 71,
+    "app_name": "Notion",
+    "status": "SUCCESS",
+    "duration_seconds": 3.12,
+    "fetched_urls": [
+      "https://developers.notion.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "NOTION_CREATE_PAGE",
+      "NOTION_SEARCH"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.notion.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:44.858261",
+    "app_id": 72,
+    "app_name": "Airtable",
+    "status": "SUCCESS",
+    "duration_seconds": 1.81,
+    "fetched_urls": [
+      "https://airtable.com/developers"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "AIRTABLE_CREATE_RECORD",
+      "AIRTABLE_GET_BASE"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://airtable.com/developers: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:47.412164",
+    "app_id": 73,
+    "app_name": "Linear",
+    "status": "SUCCESS",
+    "duration_seconds": 2.53,
+    "fetched_urls": [
+      "https://developers.linear.app"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.linear.app: 826 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:48.850233",
+    "app_id": 74,
+    "app_name": "Jira",
+    "status": "SUCCESS",
+    "duration_seconds": 1.29,
+    "fetched_urls": [
+      "https://developer.atlassian.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "JIRA_CREATE_ISSUE",
+      "JIRA_GET_PROJECTS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.atlassian.com: 276 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:50.595621",
+    "app_id": 75,
+    "app_name": "Asana",
+    "status": "SUCCESS",
+    "duration_seconds": 1.72,
+    "fetched_urls": [
+      "https://developers.asana.com"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "ASANA_CREATE_TASK",
+      "ASANA_GET_PROJECTS"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developers.asana.com: 1703 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:51.917645",
+    "app_id": 76,
+    "app_name": "Monday.com",
+    "status": "SUCCESS",
+    "duration_seconds": 1.3,
+    "fetched_urls": [
+      "https://developer.monday.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.monday.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:40:54.554063",
+    "app_id": 77,
+    "app_name": "ClickUp",
+    "status": "SUCCESS",
+    "duration_seconds": 2.61,
+    "fetched_urls": [
+      "https://clickup.com/api"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "CLICKUP_CREATE_TASK"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://clickup.com/api: 645 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:00.039900",
+    "app_id": 78,
+    "app_name": "Coda",
+    "status": "SUCCESS",
+    "duration_seconds": 5.46,
+    "fetched_urls": [
+      "https://coda.io/developers"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://coda.io/developers: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:03.915456",
+    "app_id": 79,
+    "app_name": "Smartsheet",
+    "status": "SUCCESS",
+    "duration_seconds": 3.86,
+    "fetched_urls": [
+      "https://smartsheet.com/developers"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://smartsheet.com/developers: 1267 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:05.715307",
+    "app_id": 80,
+    "app_name": "Harvest",
+    "status": "SUCCESS",
+    "duration_seconds": 1.78,
+    "fetched_urls": [
+      "https://help.getharvest.com/api-v2"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://help.getharvest.com/api-v2: 1029 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:10.238649",
+    "app_id": 81,
+    "app_name": "Stripe",
+    "status": "SUCCESS",
+    "duration_seconds": 4.5,
+    "fetched_urls": [
+      "https://stripe.com/docs/api"
+    ],
+    "composio_toolkit_found": true,
+    "composio_sample_actions": [
+      "STRIPE_CREATE_CUSTOMER",
+      "STRIPE_LIST_CHARGES"
+    ],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://stripe.com/docs/api: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:14.726761",
+    "app_id": 82,
+    "app_name": "Plaid",
+    "status": "SUCCESS",
+    "duration_seconds": 4.46,
+    "fetched_urls": [
+      "https://plaid.com/docs"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://plaid.com/docs: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:15.370657",
+    "app_id": 83,
+    "app_name": "Binance",
+    "status": "SUCCESS",
+    "duration_seconds": 0.62,
+    "fetched_urls": [
+      "https://binance-docs.github.io"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://binance-docs.github.io: Inspection error: HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:18.106137",
+    "app_id": 84,
+    "app_name": "Paygent Connect",
+    "status": "SUCCESS",
+    "duration_seconds": 2.71,
+    "fetched_urls": [
+      "https://NMI-powered"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Failed] https://NMI-powered: Inspection error: <urlopen error [Errno 11001] getaddrinfo failed>"
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:28.437696",
+    "app_id": 85,
+    "app_name": "iPayX",
+    "status": "SUCCESS",
+    "duration_seconds": 10.31,
+    "fetched_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://ipayx.ai/docs: 912 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:35.534712",
+    "app_id": 86,
+    "app_name": "QuickBooks",
+    "status": "SUCCESS",
+    "duration_seconds": 7.07,
+    "fetched_urls": [
+      "https://developer.intuit.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.intuit.com: 62 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:37.363691",
+    "app_id": 87,
+    "app_name": "Xero",
+    "status": "SUCCESS",
+    "duration_seconds": 1.81,
+    "fetched_urls": [
+      "https://developer.xero.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.xero.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:39.450646",
+    "app_id": 88,
+    "app_name": "Brex",
+    "status": "SUCCESS",
+    "duration_seconds": 2.06,
+    "fetched_urls": [
+      "https://developer.brex.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://developer.brex.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:40.270607",
+    "app_id": 89,
+    "app_name": "Ramp",
+    "status": "SUCCESS",
+    "duration_seconds": 0.78,
+    "fetched_urls": [
+      "https://docs.ramp.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.ramp.com: 996 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:41.622874",
+    "app_id": 90,
+    "app_name": "PitchBook",
+    "status": "SUCCESS",
+    "duration_seconds": 1.32,
+    "fetched_urls": [
+      "https://pitchbook.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://pitchbook.com: 1949 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:44.729421",
+    "app_id": 91,
+    "app_name": "NotebookLM",
+    "status": "SUCCESS",
+    "duration_seconds": 3.09,
+    "fetched_urls": [
+      "https://cloud.google.com/gemini"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://cloud.google.com/gemini: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:52.296961",
+    "app_id": 92,
+    "app_name": "Otter AI",
+    "status": "SUCCESS",
+    "duration_seconds": 7.54,
+    "fetched_urls": [
+      "https://help.otter.ai"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://help.otter.ai: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:55.645197",
+    "app_id": 93,
+    "app_name": "Fathom",
+    "status": "SUCCESS",
+    "duration_seconds": 3.34,
+    "fetched_urls": [
+      "https://fathom.video"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://fathom.video: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:41:56.825885",
+    "app_id": 94,
+    "app_name": "Consensus",
+    "status": "SUCCESS",
+    "duration_seconds": 1.16,
+    "fetched_urls": [
+      "https://consensus.app"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://consensus.app: 74 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:00.158087",
+    "app_id": 95,
+    "app_name": "Reducto",
+    "status": "SUCCESS",
+    "duration_seconds": 3.3,
+    "fetched_urls": [
+      "https://reducto.ai"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://reducto.ai: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:01.923439",
+    "app_id": 96,
+    "app_name": "Devin",
+    "status": "SUCCESS",
+    "duration_seconds": 1.74,
+    "fetched_urls": [
+      "https://docs.devin.ai"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://docs.devin.ai: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:02.962218",
+    "app_id": 97,
+    "app_name": "higgsfield",
+    "status": "SUCCESS",
+    "duration_seconds": 1.01,
+    "fetched_urls": [
+      "https://higgsfield.ai/cli"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://higgsfield.ai/cli: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:05.286453",
+    "app_id": 98,
+    "app_name": "Mermaid CLI",
+    "status": "SUCCESS",
+    "duration_seconds": 2.29,
+    "fetched_urls": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://github.com/mermaid-js/mermaid-cli: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:06.602759",
+    "app_id": 99,
+    "app_name": "YouTube Transcript",
+    "status": "SUCCESS",
+    "duration_seconds": 1.29,
+    "fetched_urls": [
+      "https://transcriptapi.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://transcriptapi.com: 2000 chars extracted."
+    ]
+  },
+  {
+    "timestamp": "2026-08-17T18:42:07.676307",
+    "app_id": 100,
+    "app_name": "Grain",
+    "status": "SUCCESS",
+    "duration_seconds": 1.04,
+    "fetched_urls": [
+      "https://grain.com"
+    ],
+    "composio_toolkit_found": false,
+    "composio_sample_actions": [],
+    "inspection_logs": [
+      "[Browser/HTTP Inspection] https://grain.com: 2000 chars extracted."
+    ]
+  }
+]

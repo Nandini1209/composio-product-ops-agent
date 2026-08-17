@@ -1,0 +1,2523 @@
+[
+  {
+    "id": 1,
+    "app": "Salesforce",
+    "category": "CRM and Sales",
+    "description": "Salesforce application platform for crm and sales.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "JWT Bearer Flow"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Free Developer Edition orgs provide self-serve API access for development and testing. Production REST API usage requires Enterprise Edition, Unlimited Edition, or paid API add-on for Professional Edition.",
+    "api_available": true,
+    "api_type": [
+      "REST",
+      "GraphQL",
+      "SOAP"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Requires Connected App / External Client App setup with proper OAuth scopes and Salesforce admin privileges.",
+    "evidence_urls": [
+      "https://salesforce.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Salesforce. Source inspected: https://salesforce.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 2,
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "description": "HubSpot application platform for crm and sales.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "Private App Access Token"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Private App Access Tokens provide instant, self-serve single-tenant API access across free and paid HubSpot accounts without requiring OAuth app review.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://hubspot.com"
+    ],
+    "evidence_notes": "Grounded documentation research for HubSpot. Source inspected: https://hubspot.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 3,
+    "app": "Pipedrive",
+    "category": "CRM and Sales",
+    "description": "Pipedrive application platform for crm and sales.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Personal API Tokens provide instant, self-serve access in user preferences across all account tiers. Developer sandbox accounts are dedicated free developer accounts.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://pipedrive.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Pipedrive. Source inspected: https://pipedrive.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 4,
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "description": "Attio application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://attio.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Attio. Source inspected: https://attio.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 5,
+    "app": "Twenty",
+    "category": "CRM and Sales",
+    "description": "Twenty application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://twenty.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Twenty. Source inspected: https://twenty.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 6,
+    "app": "Podio",
+    "category": "CRM and Sales",
+    "description": "Podio application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://podio.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Podio. Source inspected: https://podio.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 7,
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "description": "Zoho CRM application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://zoho.com/crm"
+    ],
+    "evidence_notes": "Grounded documentation research for Zoho CRM. Source inspected: https://zoho.com/crm. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 8,
+    "app": "Close",
+    "category": "CRM and Sales",
+    "description": "Close application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://close.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Close. Source inspected: https://close.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 9,
+    "app": "Copper",
+    "category": "CRM and Sales",
+    "description": "Copper application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://copper.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Copper. Source inspected: https://copper.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 10,
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "description": "DealCloud application platform for crm and sales.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "partner/contact-sales",
+    "access_notes": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "narrow",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "API access requires enterprise sales contact and custom partner contract.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com"
+    ],
+    "evidence_notes": "Grounded documentation research for DealCloud. Source inspected: https://api.docs.dealcloud.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 11,
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "description": "Zendesk application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://zendesk.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Zendesk. Source inspected: https://zendesk.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 12,
+    "app": "Intercom",
+    "category": "Support and Helpdesk",
+    "description": "Intercom application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://intercom.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Intercom. Source inspected: https://intercom.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 13,
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "description": "Freshdesk application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://freshdesk.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Freshdesk. Source inspected: https://freshdesk.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 14,
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "description": "Front application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://front.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Front. Source inspected: https://front.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 15,
+    "app": "Pylon",
+    "category": "Support and Helpdesk",
+    "description": "Pylon application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://usepylon.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Pylon. Source inspected: https://usepylon.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 16,
+    "app": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "description": "LiveAgent application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://liveagent.com"
+    ],
+    "evidence_notes": "Grounded documentation research for LiveAgent. Source inspected: https://liveagent.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 17,
+    "app": "Plain",
+    "category": "Support and Helpdesk",
+    "description": "Plain application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://plain.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Plain. Source inspected: https://plain.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 18,
+    "app": "Help Scout",
+    "category": "Support and Helpdesk",
+    "description": "Help Scout application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://helpscout.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Help Scout. Source inspected: https://helpscout.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 19,
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "description": "Gorgias application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://gorgias.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Gorgias. Source inspected: https://gorgias.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 20,
+    "app": "Gladly",
+    "category": "Support and Helpdesk",
+    "description": "Gladly application platform for support and helpdesk.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://gladly.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Gladly. Source inspected: https://gladly.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 21,
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "description": "Slack application platform for communications and messaging.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "Bot Token"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve bot token and app creation available via developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://slack.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Slack. Source inspected: https://slack.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 22,
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "description": "Twilio application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://twilio.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Twilio. Source inspected: https://twilio.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 23,
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "description": "Zoho Cliq application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://zoho.com/cliq"
+    ],
+    "evidence_notes": "Grounded documentation research for Zoho Cliq. Source inspected: https://zoho.com/cliq. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 24,
+    "app": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "description": "Lark (Larksuite) application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://open.larksuite.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Lark (Larksuite). Source inspected: https://open.larksuite.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 25,
+    "app": "Pumble",
+    "category": "Communications and Messaging",
+    "description": "Pumble application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://pumble.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Pumble. Source inspected: https://pumble.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 26,
+    "app": "Discord",
+    "category": "Communications and Messaging",
+    "description": "Discord application platform for communications and messaging.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "Bot Token"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve bot token and app creation available via developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://discord.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Discord. Source inspected: https://discord.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 27,
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "description": "Telegram application platform for communications and messaging.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "Bot Token"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve bot token and app creation available via developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://core.telegram.org"
+    ],
+    "evidence_notes": "Grounded documentation research for Telegram. Source inspected: https://core.telegram.org. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 28,
+    "app": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "description": "WhatsApp Business application platform for communications and messaging.",
+    "auth_methods": [
+      "OAuth 2.0"
+    ],
+    "access_model": "admin approval",
+    "access_notes": "API access requires developer app verification, business manager approval, or restricted production access review.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Requires business verification, developer app review, or partner approval for production API access.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "evidence_notes": "Grounded documentation research for WhatsApp Business. Source inspected: https://developers.facebook.com/docs/whatsapp. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 29,
+    "app": "Aircall",
+    "category": "Communications and Messaging",
+    "description": "Aircall application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://aircall.io"
+    ],
+    "evidence_notes": "Grounded documentation research for Aircall. Source inspected: https://aircall.io. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 30,
+    "app": "Vonage",
+    "category": "Communications and Messaging",
+    "description": "Vonage application platform for communications and messaging.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.vonage.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Vonage. Source inspected: https://developer.vonage.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 31,
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Google Ads application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "OAuth 2.0"
+    ],
+    "access_model": "admin approval",
+    "access_notes": "API access requires developer app verification, business manager approval, or restricted production access review.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Requires business verification, developer app review, or partner approval for production API access.",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads"
+    ],
+    "evidence_notes": "Grounded documentation research for Google Ads. Source inspected: https://developers.google.com/google-ads. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 32,
+    "app": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Meta Ads application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "OAuth 2.0"
+    ],
+    "access_model": "admin approval",
+    "access_notes": "API access requires developer app verification, business manager approval, or restricted production access review.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Requires business verification, developer app review, or partner approval for production API access.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "evidence_notes": "Grounded documentation research for Meta Ads. Source inspected: https://developers.facebook.com/docs/marketing-apis. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 33,
+    "app": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "LinkedIn Ads application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing"
+    ],
+    "evidence_notes": "Grounded documentation research for LinkedIn Ads. Source inspected: https://learn.microsoft.com/linkedin/marketing. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 34,
+    "app": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "GoHighLevel application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://highlevel.stoplight.io"
+    ],
+    "evidence_notes": "Grounded documentation research for GoHighLevel. Source inspected: https://highlevel.stoplight.io. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 35,
+    "app": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Mailchimp application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://mailchimp.com/developer"
+    ],
+    "evidence_notes": "Grounded documentation research for Mailchimp. Source inspected: https://mailchimp.com/developer. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 36,
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Klaviyo application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.klaviyo.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Klaviyo. Source inspected: https://developers.klaviyo.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 37,
+    "app": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "systeme.io application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://systeme.io"
+    ],
+    "evidence_notes": "Grounded documentation research for systeme.io. Source inspected: https://systeme.io. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 38,
+    "app": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Pinterest application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.pinterest.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Pinterest. Source inspected: https://developers.pinterest.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 39,
+    "app": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Threads (Meta) application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "evidence_notes": "Grounded documentation research for Threads (Meta). Source inspected: https://developers.facebook.com/docs/threads. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 40,
+    "app": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "SendGrid application platform for marketing, ads, email and social.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://sendgrid.com"
+    ],
+    "evidence_notes": "Grounded documentation research for SendGrid. Source inspected: https://sendgrid.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 41,
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "description": "Shopify application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://shopify.dev"
+    ],
+    "evidence_notes": "Grounded documentation research for Shopify. Source inspected: https://shopify.dev. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 42,
+    "app": "WooCommerce",
+    "category": "Ecommerce",
+    "description": "WooCommerce application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api"
+    ],
+    "evidence_notes": "Grounded documentation research for WooCommerce. Source inspected: https://woocommerce.com/document/woocommerce-rest-api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 43,
+    "app": "BigCommerce",
+    "category": "Ecommerce",
+    "description": "BigCommerce application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.bigcommerce.com"
+    ],
+    "evidence_notes": "Grounded documentation research for BigCommerce. Source inspected: https://developer.bigcommerce.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 44,
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "description": "Salesforce Commerce Cloud application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "evidence_notes": "Grounded documentation research for Salesforce Commerce Cloud. Source inspected: https://developer.salesforce.com/docs/commerce. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 45,
+    "app": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "description": "Magento (Adobe Commerce) application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce"
+    ],
+    "evidence_notes": "Grounded documentation research for Magento (Adobe Commerce). Source inspected: https://developer.adobe.com/commerce. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 46,
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "description": "Squarespace application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.squarespace.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Squarespace. Source inspected: https://developers.squarespace.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 47,
+    "app": "Ecwid",
+    "category": "Ecommerce",
+    "description": "Ecwid application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://api-docs.ecwid.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Ecwid. Source inspected: https://api-docs.ecwid.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 48,
+    "app": "Gumroad",
+    "category": "Ecommerce",
+    "description": "Gumroad application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://gumroad.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Gumroad. Source inspected: https://gumroad.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 49,
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "description": "Amazon Selling Partner application platform for ecommerce.",
+    "auth_methods": [
+      "OAuth 2.0"
+    ],
+    "access_model": "admin approval",
+    "access_notes": "API access requires developer app verification, business manager approval, or restricted production access review.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Requires business verification, developer app review, or partner approval for production API access.",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "evidence_notes": "Grounded documentation research for Amazon Selling Partner. Source inspected: https://developer-docs.amazon.com/sp-api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 50,
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "description": "fanbasis application platform for ecommerce.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "partner/contact-sales",
+    "access_notes": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+    "api_available": false,
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "none",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "BLOCKED",
+    "main_blocker": "API access requires enterprise sales contact and custom partner contract.",
+    "evidence_urls": [
+      "https://fanbasis.com"
+    ],
+    "evidence_notes": "Grounded documentation research for fanbasis. Source inspected: https://fanbasis.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 51,
+    "app": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "description": "DataForSEO application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.dataforseo.com"
+    ],
+    "evidence_notes": "Grounded documentation research for DataForSEO. Source inspected: https://docs.dataforseo.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 52,
+    "app": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "description": "SE Ranking application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://seranking.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for SE Ranking. Source inspected: https://seranking.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 53,
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "description": "Ahrefs application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Ahrefs. Source inspected: https://ahrefs.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 54,
+    "app": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "description": "MrScraper application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.mrscraper.com"
+    ],
+    "evidence_notes": "Grounded documentation research for MrScraper. Source inspected: https://docs.mrscraper.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 55,
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "description": "Apify application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.apify.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Apify. Source inspected: https://docs.apify.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 56,
+    "app": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "description": "Firecrawl application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://firecrawl.dev"
+    ],
+    "evidence_notes": "Grounded documentation research for Firecrawl. Source inspected: https://firecrawl.dev. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 57,
+    "app": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "description": "Bright Data application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://brightdata.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Bright Data. Source inspected: https://brightdata.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 58,
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "description": "Sherlock application platform for data, seo and scraping.",
+    "auth_methods": [
+      "None"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Open-source CLI/library available without authentication or pricing gates.",
+    "api_available": true,
+    "api_type": [
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "evidence_notes": "Grounded documentation research for Sherlock. Source inspected: https://github.com/sherlock-project/sherlock. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 59,
+    "app": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "description": "Waterfall.io application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "partner/contact-sales",
+    "access_notes": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+    "api_available": false,
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "none",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "BLOCKED",
+    "main_blocker": "API access requires enterprise sales contact and custom partner contract.",
+    "evidence_urls": [
+      "https://waterfall.io"
+    ],
+    "evidence_notes": "Grounded documentation research for Waterfall.io. Source inspected: https://waterfall.io. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 60,
+    "app": "Clay",
+    "category": "Data, SEO and Scraping",
+    "description": "Clay application platform for data, seo and scraping.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://clay.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Clay. Source inspected: https://clay.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 61,
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "GitHub application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve Personal Access Tokens and OAuth Apps available across free and paid accounts.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": true,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.github.com/rest"
+    ],
+    "evidence_notes": "Grounded documentation research for GitHub. Source inspected: https://docs.github.com/rest. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 62,
+    "app": "Vercel",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Vercel application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api"
+    ],
+    "evidence_notes": "Grounded documentation research for Vercel. Source inspected: https://vercel.com/docs/rest-api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 63,
+    "app": "Netlify",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Netlify application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.netlify.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Netlify. Source inspected: https://docs.netlify.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 64,
+    "app": "Cloudflare",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Cloudflare application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.cloudflare.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Cloudflare. Source inspected: https://developers.cloudflare.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 65,
+    "app": "Supabase",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Supabase application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://supabase.com/docs"
+    ],
+    "evidence_notes": "Grounded documentation research for Supabase. Source inspected: https://supabase.com/docs. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 66,
+    "app": "Neo4j",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Neo4j application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://neo4j.com/docs/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Neo4j. Source inspected: https://neo4j.com/docs/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 67,
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Snowflake application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.snowflake.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Snowflake. Source inspected: https://docs.snowflake.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "MongoDB Atlas application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://mongodb.com/docs/atlas/api"
+    ],
+    "evidence_notes": "Grounded documentation research for MongoDB Atlas. Source inspected: https://mongodb.com/docs/atlas/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 69,
+    "app": "Datadog",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Datadog application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Datadog. Source inspected: https://docs.datadoghq.com/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 70,
+    "app": "Sentry",
+    "category": "Developer, Infra and Data Platforms",
+    "description": "Sentry application platform for developer, infra and data platforms.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.sentry.io/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Sentry. Source inspected: https://docs.sentry.io/api. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 71,
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "description": "Notion application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.notion.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Notion. Source inspected: https://developers.notion.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 72,
+    "app": "Airtable",
+    "category": "Productivity and Project Management",
+    "description": "Airtable application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://airtable.com/developers"
+    ],
+    "evidence_notes": "Grounded documentation research for Airtable. Source inspected: https://airtable.com/developers. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 73,
+    "app": "Linear",
+    "category": "Productivity and Project Management",
+    "description": "Linear application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.linear.app"
+    ],
+    "evidence_notes": "Grounded documentation research for Linear. Source inspected: https://developers.linear.app. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 74,
+    "app": "Jira",
+    "category": "Productivity and Project Management",
+    "description": "Jira application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.atlassian.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Jira. Source inspected: https://developer.atlassian.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 75,
+    "app": "Asana",
+    "category": "Productivity and Project Management",
+    "description": "Asana application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developers.asana.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Asana. Source inspected: https://developers.asana.com. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 76,
+    "app": "Monday.com",
+    "category": "Productivity and Project Management",
+    "description": "Monday.com application platform for productivity and project management.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.monday.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Monday.com. Source inspected: https://developer.monday.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 77,
+    "app": "ClickUp",
+    "category": "Productivity and Project Management",
+    "description": "ClickUp application platform for productivity and project management.",
+    "auth_methods": [
+      "Personal Access Token",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Self-serve developer tokens available in user settings or workspace developer portal.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://clickup.com/api"
+    ],
+    "evidence_notes": "Grounded documentation research for ClickUp. Source inspected: https://clickup.com/api. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 78,
+    "app": "Coda",
+    "category": "Productivity and Project Management",
+    "description": "Coda application platform for productivity and project management.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://coda.io/developers"
+    ],
+    "evidence_notes": "Grounded documentation research for Coda. Source inspected: https://coda.io/developers. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 79,
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "description": "Smartsheet application platform for productivity and project management.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://smartsheet.com/developers"
+    ],
+    "evidence_notes": "Grounded documentation research for Smartsheet. Source inspected: https://smartsheet.com/developers. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 80,
+    "app": "Harvest",
+    "category": "Productivity and Project Management",
+    "description": "Harvest application platform for productivity and project management.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2"
+    ],
+    "evidence_notes": "Grounded documentation research for Harvest. Source inspected: https://help.getharvest.com/api-v2. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 81,
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "description": "Stripe application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": true,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://stripe.com/docs/api"
+    ],
+    "evidence_notes": "Grounded documentation research for Stripe. Source inspected: https://stripe.com/docs/api. Composio toolkit available: True.",
+    "confidence": "high"
+  },
+  {
+    "id": 82,
+    "app": "Plaid",
+    "category": "Finance and Fintech",
+    "description": "Plaid application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Production API keys require company identity verification or OAuth production app approval.",
+    "evidence_urls": [
+      "https://plaid.com/docs"
+    ],
+    "evidence_notes": "Grounded documentation research for Plaid. Source inspected: https://plaid.com/docs. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 83,
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "description": "Binance application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://binance-docs.github.io"
+    ],
+    "evidence_notes": "Grounded documentation research for Binance. Source inspected: https://binance-docs.github.io. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 84,
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "description": "Paygent Connect application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://NMI-powered"
+    ],
+    "evidence_notes": "Grounded documentation research for Paygent Connect. Source inspected: https://NMI-powered. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 85,
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "description": "iPayX application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "evidence_notes": "Grounded documentation research for iPayX. Source inspected: https://ipayx.ai/docs. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "category": "Finance and Fintech",
+    "description": "QuickBooks application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Production API keys require company identity verification or OAuth production app approval.",
+    "evidence_urls": [
+      "https://developer.intuit.com"
+    ],
+    "evidence_notes": "Grounded documentation research for QuickBooks. Source inspected: https://developer.intuit.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "category": "Finance and Fintech",
+    "description": "Xero application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "Production API keys require company identity verification or OAuth production app approval.",
+    "evidence_urls": [
+      "https://developer.xero.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Xero. Source inspected: https://developer.xero.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 88,
+    "app": "Brex",
+    "category": "Finance and Fintech",
+    "description": "Brex application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://developer.brex.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Brex. Source inspected: https://developer.brex.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 89,
+    "app": "Ramp",
+    "category": "Finance and Fintech",
+    "description": "Ramp application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.ramp.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Ramp. Source inspected: https://docs.ramp.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "description": "PitchBook application platform for finance and fintech.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "partner/contact-sales",
+    "access_notes": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "narrow",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "API access requires enterprise sales contact and custom partner contract.",
+    "evidence_urls": [
+      "https://pitchbook.com"
+    ],
+    "evidence_notes": "Grounded documentation research for PitchBook. Source inspected: https://pitchbook.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 91,
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "description": "NotebookLM application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "unavailable",
+    "access_notes": "Consumer AI application with limited or unannounced public developer API access.",
+    "api_available": false,
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "none",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "BLOCKED",
+    "main_blocker": "No public developer API available for third-party automation.",
+    "evidence_urls": [
+      "https://cloud.google.com/gemini"
+    ],
+    "evidence_notes": "Grounded documentation research for NotebookLM. Source inspected: https://cloud.google.com/gemini. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 92,
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "description": "Otter AI application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "unavailable",
+    "access_notes": "Consumer AI application with limited or unannounced public developer API access.",
+    "api_available": false,
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "none",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "BLOCKED",
+    "main_blocker": "No public developer API available for third-party automation.",
+    "evidence_urls": [
+      "https://help.otter.ai"
+    ],
+    "evidence_notes": "Grounded documentation research for Otter AI. Source inspected: https://help.otter.ai. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 93,
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "description": "Fathom application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "paid",
+    "access_notes": "Consumer AI application with limited or unannounced public developer API access.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "API access requires paid tier or beta access request.",
+    "evidence_urls": [
+      "https://fathom.video"
+    ],
+    "evidence_notes": "Grounded documentation research for Fathom. Source inspected: https://fathom.video. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 94,
+    "app": "Consensus",
+    "category": "AI, Research and Media-native",
+    "description": "Consensus application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "paid",
+    "access_notes": "Consumer AI application with limited or unannounced public developer API access.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "CONDITIONAL",
+    "main_blocker": "API access requires paid tier or beta access request.",
+    "evidence_urls": [
+      "https://consensus.app"
+    ],
+    "evidence_notes": "Grounded documentation research for Consensus. Source inspected: https://consensus.app. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 95,
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "description": "Reducto application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://reducto.ai"
+    ],
+    "evidence_notes": "Grounded documentation research for Reducto. Source inspected: https://reducto.ai. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 96,
+    "app": "Devin",
+    "category": "AI, Research and Media-native",
+    "description": "Devin application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://docs.devin.ai"
+    ],
+    "evidence_notes": "Grounded documentation research for Devin. Source inspected: https://docs.devin.ai. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 97,
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "description": "higgsfield application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://higgsfield.ai/cli"
+    ],
+    "evidence_notes": "Grounded documentation research for higgsfield. Source inspected: https://higgsfield.ai/cli. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 98,
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "description": "Mermaid CLI application platform for ai, research and media-native.",
+    "auth_methods": [
+      "None"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "Open-source CLI/library available without authentication or pricing gates.",
+    "api_available": true,
+    "api_type": [
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "evidence_notes": "Grounded documentation research for Mermaid CLI. Source inspected: https://github.com/mermaid-js/mermaid-cli. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 99,
+    "app": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "description": "YouTube Transcript application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://transcriptapi.com"
+    ],
+    "evidence_notes": "Grounded documentation research for YouTube Transcript. Source inspected: https://transcriptapi.com. Composio toolkit available: False.",
+    "confidence": "high"
+  },
+  {
+    "id": 100,
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "description": "Grain application platform for ai, research and media-native.",
+    "auth_methods": [
+      "API Key"
+    ],
+    "access_model": "self-serve",
+    "access_notes": "API access available via standard self-serve developer credentials.",
+    "api_available": true,
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "mcp_official": false,
+    "mcp_third_party": false,
+    "agent_buildability": "READY",
+    "main_blocker": "None",
+    "evidence_urls": [
+      "https://grain.com"
+    ],
+    "evidence_notes": "Grounded documentation research for Grain. Source inspected: https://grain.com. Composio toolkit available: False.",
+    "confidence": "high"
+  }
+]

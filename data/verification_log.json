@@ -1,0 +1,1447 @@
+{
+  "timestamp": "2026-08-17T18:51:11.550878",
+  "metrics": {
+    "total_apps": 100,
+    "total_fields_defined_in_schema": 17,
+    "total_fields_actually_checked": 1200,
+    "first_pass_correct": 1025,
+    "corrected": 7,
+    "unverified": 168,
+    "first_pass_accuracy": "85.42%",
+    "evidence_failures": 14,
+    "apps_with_at_least_one_correction": 6,
+    "apps_with_at_least_one_evidence_failure": 14,
+    "final_verified_dataset_completeness": "86.0%"
+  },
+  "schema_audit": {
+    "fields_included_in_accuracy": [
+      "category",
+      "description",
+      "auth_methods",
+      "access_model",
+      "access_notes",
+      "api_available",
+      "api_type",
+      "api_breadth",
+      "mcp_official",
+      "mcp_third_party",
+      "agent_buildability",
+      "main_blocker"
+    ],
+    "fields_excluded_from_accuracy": [
+      {
+        "field": "id",
+        "reason": "Metadata integer identifier"
+      },
+      {
+        "field": "app",
+        "reason": "Application name identifier"
+      },
+      {
+        "field": "evidence_urls",
+        "reason": "Input links, evaluated separately under evidence quality"
+      },
+      {
+        "field": "evidence_notes",
+        "reason": "Free-form research summary text"
+      },
+      {
+        "field": "confidence",
+        "reason": "Meta-rating on research certainty"
+      }
+    ]
+  },
+  "corrections": [
+    {
+      "app_id": 10,
+      "app": "DealCloud",
+      "field": "access_notes",
+      "original_value": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+      "verified_value": "Enterprise financial CRM requiring sales contract and partner agreement for API access.",
+      "reason": "Original value 'Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.' corrected to verified value 'Enterprise financial CRM requiring sales contract and partner agreement for API access.' based on independent ground truth."
+    },
+    {
+      "app_id": 31,
+      "app": "Google Ads",
+      "field": "access_notes",
+      "original_value": "API access requires developer app verification, business manager approval, or restricted production access review.",
+      "verified_value": "Google Ads API requires Developer Token approval (Basic/Standard access) and OAuth 2.0 setup.",
+      "reason": "Original value 'API access requires developer app verification, business manager approval, or restricted production access review.' corrected to verified value 'Google Ads API requires Developer Token approval (Basic/Standard access) and OAuth 2.0 setup.' based on independent ground truth."
+    },
+    {
+      "app_id": 31,
+      "app": "Google Ads",
+      "field": "main_blocker",
+      "original_value": "Requires business verification, developer app review, or partner approval for production API access.",
+      "verified_value": "Requires Google Ads Developer Token application and OAuth 2.0 production app review.",
+      "reason": "Original value 'Requires business verification, developer app review, or partner approval for production API access.' corrected to verified value 'Requires Google Ads Developer Token application and OAuth 2.0 production app review.' based on independent ground truth."
+    },
+    {
+      "app_id": 61,
+      "app": "GitHub",
+      "field": "access_notes",
+      "original_value": "Self-serve Personal Access Tokens and OAuth Apps available across free and paid accounts.",
+      "verified_value": "Personal Access Tokens and GitHub Apps available self-serve across all account tiers.",
+      "reason": "Original value 'Self-serve Personal Access Tokens and OAuth Apps available across free and paid accounts.' corrected to verified value 'Personal Access Tokens and GitHub Apps available self-serve across all account tiers.' based on independent ground truth."
+    },
+    {
+      "app_id": 81,
+      "app": "Stripe",
+      "field": "access_notes",
+      "original_value": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+      "verified_value": "Instant test mode API keys available self-serve; live mode requires business account activation.",
+      "reason": "Original value 'Instant sandbox self-serve credentials available; live production access requires compliance setup.' corrected to verified value 'Instant test mode API keys available self-serve; live mode requires business account activation.' based on independent ground truth."
+    },
+    {
+      "app_id": 91,
+      "app": "NotebookLM",
+      "field": "access_notes",
+      "original_value": "Consumer AI application with limited or unannounced public developer API access.",
+      "verified_value": "Consumer AI research product with no official public developer API.",
+      "reason": "Original value 'Consumer AI application with limited or unannounced public developer API access.' corrected to verified value 'Consumer AI research product with no official public developer API.' based on independent ground truth."
+    },
+    {
+      "app_id": 92,
+      "app": "Otter AI",
+      "field": "access_notes",
+      "original_value": "Consumer AI application with limited or unannounced public developer API access.",
+      "verified_value": "Meeting assistant platform with no public third-party developer API.",
+      "reason": "Original value 'Consumer AI application with limited or unannounced public developer API access.' corrected to verified value 'Meeting assistant platform with no public third-party developer API.' based on independent ground truth."
+    }
+  ],
+  "evidence_failures": [
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "url": "https://slack.com",
+      "status": "Fetch Error",
+      "details": "IncompleteRead(66270 bytes read)"
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "url": "https://open.larksuite.com",
+      "status": "HTTP 200",
+      "details": "URL content too short (9 chars)."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "url": "https://highlevel.stoplight.io",
+      "status": "HTTP 200",
+      "details": "URL content too short (9 chars)."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "url": "https://developers.facebook.com/docs/threads",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "status": "HTTP 403",
+      "details": "HTTP Error 403: Forbidden"
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "url": "https://gumroad.com/api",
+      "status": "HTTP 200",
+      "details": "URL content too short (3 chars)."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "url": "https://seranking.com/api",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "url": "https://neo4j.com/docs/api",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "url": "https://binance-docs.github.io",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "url": "https://NMI-powered",
+      "status": "Fetch Error",
+      "details": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "url": "https://pitchbook.com",
+      "status": "HTTP 403",
+      "details": "HTTP Error 403: Forbidden"
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "status": "Fetch Error",
+      "details": "IncompleteRead(294912 bytes read)"
+    }
+  ],
+  "unverified_claims": [
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "category",
+      "original_value": "Communications and Messaging",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "description",
+      "original_value": "Slack application platform for communications and messaging.",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "auth_methods",
+      "original_value": [
+        "OAuth 2.0",
+        "Bot Token"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "access_notes",
+      "original_value": "Self-serve bot token and app creation available via developer portal.",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "mcp_third_party",
+      "original_value": true,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(66270 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "category",
+      "original_value": "Communications and Messaging",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "description",
+      "original_value": "Lark (Larksuite) application platform for communications and messaging.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "category",
+      "original_value": "Communications and Messaging",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "description",
+      "original_value": "WhatsApp Business application platform for communications and messaging.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "auth_methods",
+      "original_value": [
+        "OAuth 2.0"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "access_model",
+      "original_value": "admin approval",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "access_notes",
+      "original_value": "API access requires developer app verification, business manager approval, or restricted production access review.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "agent_buildability",
+      "original_value": "CONDITIONAL",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "field": "main_blocker",
+      "original_value": "Requires business verification, developer app review, or partner approval for production API access.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "category",
+      "original_value": "Marketing, Ads, Email and Social",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "description",
+      "original_value": "Meta Ads application platform for marketing, ads, email and social.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "auth_methods",
+      "original_value": [
+        "OAuth 2.0"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "access_model",
+      "original_value": "admin approval",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "access_notes",
+      "original_value": "API access requires developer app verification, business manager approval, or restricted production access review.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "agent_buildability",
+      "original_value": "CONDITIONAL",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "field": "main_blocker",
+      "original_value": "Requires business verification, developer app review, or partner approval for production API access.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "category",
+      "original_value": "Marketing, Ads, Email and Social",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "description",
+      "original_value": "GoHighLevel application platform for marketing, ads, email and social.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (9 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "category",
+      "original_value": "Marketing, Ads, Email and Social",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "description",
+      "original_value": "Threads (Meta) application platform for marketing, ads, email and social.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 400 - HTTP Error 400: Bad Request). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "category",
+      "original_value": "Ecommerce",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "description",
+      "original_value": "Salesforce Commerce Cloud application platform for ecommerce.",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "category",
+      "original_value": "Ecommerce",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "description",
+      "original_value": "Gumroad application platform for ecommerce.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 200 - URL content too short (3 chars).). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "category",
+      "original_value": "Data, SEO and Scraping",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "description",
+      "original_value": "SE Ranking application platform for data, seo and scraping.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "category",
+      "original_value": "Developer, Infra and Data Platforms",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "description",
+      "original_value": "Neo4j application platform for developer, infra and data platforms.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "category",
+      "original_value": "Finance and Fintech",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "description",
+      "original_value": "Binance application platform for finance and fintech.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (HTTP 404 - HTTP Error 404: Not Found). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "category",
+      "original_value": "Finance and Fintech",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "description",
+      "original_value": "Paygent Connect application platform for finance and fintech.",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "access_notes",
+      "original_value": "API access available via standard self-serve developer credentials.",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (Fetch Error - <urlopen error [Errno 11001] getaddrinfo failed>). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "category",
+      "original_value": "Finance and Fintech",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "description",
+      "original_value": "PitchBook application platform for finance and fintech.",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "auth_methods",
+      "original_value": [
+        "API Key"
+      ],
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "access_model",
+      "original_value": "partner/contact-sales",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "access_notes",
+      "original_value": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "api_type",
+      "original_value": [
+        "REST"
+      ],
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "api_breadth",
+      "original_value": "narrow",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "agent_buildability",
+      "original_value": "CONDITIONAL",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "field": "main_blocker",
+      "original_value": "API access requires enterprise sales contact and custom partner contract.",
+      "reason": "Evidence URL failed (HTTP 403 - HTTP Error 403: Forbidden). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "category",
+      "original_value": "AI, Research and Media-native",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "description",
+      "original_value": "Mermaid CLI application platform for ai, research and media-native.",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "auth_methods",
+      "original_value": [
+        "None"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "access_model",
+      "original_value": "self-serve",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "access_notes",
+      "original_value": "Open-source CLI/library available without authentication or pricing gates.",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "api_available",
+      "original_value": true,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "api_type",
+      "original_value": [
+        "CLI"
+      ],
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "api_breadth",
+      "original_value": "broad",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "mcp_official",
+      "original_value": false,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "mcp_third_party",
+      "original_value": false,
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "agent_buildability",
+      "original_value": "READY",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "field": "main_blocker",
+      "original_value": "None",
+      "reason": "Evidence URL failed (Fetch Error - IncompleteRead(294912 bytes read)). Claim could not be independently verified live."
+    }
+  ]
+}

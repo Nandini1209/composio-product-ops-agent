@@ -1,0 +1,322 @@
+{
+  "total_apps": 100,
+  "category_distribution": {
+    "CRM and Sales": 10,
+    "Support and Helpdesk": 10,
+    "Communications and Messaging": 10,
+    "Marketing, Ads, Email and Social": 10,
+    "Ecommerce": 10,
+    "Data, SEO and Scraping": 10,
+    "Developer, Infra and Data Platforms": 10,
+    "Productivity and Project Management": 10,
+    "Finance and Fintech": 10,
+    "AI, Research and Media-native": 10
+  },
+  "auth_methods_distribution": {
+    "OAuth 2.0": 23,
+    "JWT Bearer Flow": 1,
+    "Private App Access Token": 1,
+    "API Key": 82,
+    "Bot Token": 3,
+    "None": 2,
+    "Personal Access Token": 7
+  },
+  "access_model_distribution": {
+    "self-serve": 88,
+    "partner/contact-sales": 4,
+    "admin approval": 4,
+    "unavailable": 2,
+    "paid": 2
+  },
+  "api_availability": {
+    "True": 96,
+    "False": 4
+  },
+  "api_type_distribution": {
+    "REST": 94,
+    "GraphQL": 1,
+    "SOAP": 1,
+    "none": 4,
+    "CLI": 2
+  },
+  "api_breadth_distribution": {
+    "broad": 94,
+    "narrow": 2,
+    "none": 4
+  },
+  "mcp_official_distribution": {
+    "False": 99,
+    "True": 1
+  },
+  "mcp_third_party_distribution": {
+    "True": 19,
+    "False": 81
+  },
+  "mcp_ecosystem_matrix": {
+    "official_and_third_party": 1,
+    "third_party_only": 18,
+    "official_only": 0,
+    "no_mcp": 81
+  },
+  "agent_buildability_distribution": {
+    "CONDITIONAL": 12,
+    "READY": 84,
+    "BLOCKED": 4
+  },
+  "main_blocker_distribution": {
+    "Requires Connected App / External Client App setup with proper OAuth scopes and Salesforce admin privileges.": 1,
+    "API access requires enterprise sales contact and custom partner contract.": 4,
+    "Requires business verification, Meta developer app review, and admin token configuration.": 1,
+    "Requires Google Ads Developer Token application and OAuth 2.0 production app review.": 1,
+    "Requires Meta App Review for ads_management permission and Business Manager verification.": 1,
+    "Requires business verification, developer app review, or partner approval for production API access.": 1,
+    "Production API keys require company identity verification or OAuth production app approval.": 3,
+    "No public developer API available for third-party automation.": 2,
+    "API access requires paid tier or beta access request.": 2
+  },
+  "verification_telemetry": {
+    "first_pass_accuracy": "85.42%",
+    "total_fields_checked": 1200,
+    "first_pass_correct_fields": 1025,
+    "corrected_fields": 7,
+    "unverified_fields": 168,
+    "apps_with_corrections": 6,
+    "apps_with_evidence_failures": 14,
+    "completeness": "86.0%"
+  },
+  "category_buildability_patterns": {
+    "CRM and Sales": {
+      "READY": 8,
+      "CONDITIONAL": 2,
+      "BLOCKED": 0
+    },
+    "Support and Helpdesk": {
+      "READY": 10,
+      "CONDITIONAL": 0,
+      "BLOCKED": 0
+    },
+    "Communications and Messaging": {
+      "READY": 9,
+      "CONDITIONAL": 1,
+      "BLOCKED": 0
+    },
+    "Marketing, Ads, Email and Social": {
+      "READY": 8,
+      "CONDITIONAL": 2,
+      "BLOCKED": 0
+    },
+    "Ecommerce": {
+      "READY": 8,
+      "CONDITIONAL": 1,
+      "BLOCKED": 1
+    },
+    "Data, SEO and Scraping": {
+      "READY": 9,
+      "CONDITIONAL": 0,
+      "BLOCKED": 1
+    },
+    "Developer, Infra and Data Platforms": {
+      "READY": 10,
+      "CONDITIONAL": 0,
+      "BLOCKED": 0
+    },
+    "Productivity and Project Management": {
+      "READY": 10,
+      "CONDITIONAL": 0,
+      "BLOCKED": 0
+    },
+    "Finance and Fintech": {
+      "READY": 6,
+      "CONDITIONAL": 4,
+      "BLOCKED": 0
+    },
+    "AI, Research and Media-native": {
+      "READY": 6,
+      "CONDITIONAL": 2,
+      "BLOCKED": 2
+    }
+  },
+  "category_access_patterns": {
+    "CRM and Sales": {
+      "self-serve": 9,
+      "partner/contact-sales": 1
+    },
+    "Support and Helpdesk": {
+      "self-serve": 10
+    },
+    "Communications and Messaging": {
+      "self-serve": 9,
+      "admin approval": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "admin approval": 2,
+      "self-serve": 8
+    },
+    "Ecommerce": {
+      "self-serve": 8,
+      "admin approval": 1,
+      "partner/contact-sales": 1
+    },
+    "Data, SEO and Scraping": {
+      "self-serve": 9,
+      "partner/contact-sales": 1
+    },
+    "Developer, Infra and Data Platforms": {
+      "self-serve": 10
+    },
+    "Productivity and Project Management": {
+      "self-serve": 10
+    },
+    "Finance and Fintech": {
+      "self-serve": 9,
+      "partner/contact-sales": 1
+    },
+    "AI, Research and Media-native": {
+      "unavailable": 2,
+      "paid": 2,
+      "self-serve": 6
+    }
+  },
+  "correction_examples": [
+    {
+      "app_id": 10,
+      "app": "DealCloud",
+      "field": "access_notes",
+      "original_value": "Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.",
+      "verified_value": "Enterprise financial CRM requiring sales contract and partner agreement for API access.",
+      "reason": "Original value 'Enterprise-restricted platform requiring sales consultation, partner agreement, or bespoke contract for API access.' corrected to verified value 'Enterprise financial CRM requiring sales contract and partner agreement for API access.' based on independent ground truth."
+    },
+    {
+      "app_id": 31,
+      "app": "Google Ads",
+      "field": "access_notes",
+      "original_value": "API access requires developer app verification, business manager approval, or restricted production access review.",
+      "verified_value": "Google Ads API requires Developer Token approval (Basic/Standard access) and OAuth 2.0 setup.",
+      "reason": "Original value 'API access requires developer app verification, business manager approval, or restricted production access review.' corrected to verified value 'Google Ads API requires Developer Token approval (Basic/Standard access) and OAuth 2.0 setup.' based on independent ground truth."
+    },
+    {
+      "app_id": 31,
+      "app": "Google Ads",
+      "field": "main_blocker",
+      "original_value": "Requires business verification, developer app review, or partner approval for production API access.",
+      "verified_value": "Requires Google Ads Developer Token application and OAuth 2.0 production app review.",
+      "reason": "Original value 'Requires business verification, developer app review, or partner approval for production API access.' corrected to verified value 'Requires Google Ads Developer Token application and OAuth 2.0 production app review.' based on independent ground truth."
+    },
+    {
+      "app_id": 61,
+      "app": "GitHub",
+      "field": "access_notes",
+      "original_value": "Self-serve Personal Access Tokens and OAuth Apps available across free and paid accounts.",
+      "verified_value": "Personal Access Tokens and GitHub Apps available self-serve across all account tiers.",
+      "reason": "Original value 'Self-serve Personal Access Tokens and OAuth Apps available across free and paid accounts.' corrected to verified value 'Personal Access Tokens and GitHub Apps available self-serve across all account tiers.' based on independent ground truth."
+    },
+    {
+      "app_id": 81,
+      "app": "Stripe",
+      "field": "access_notes",
+      "original_value": "Instant sandbox self-serve credentials available; live production access requires compliance setup.",
+      "verified_value": "Instant test mode API keys available self-serve; live mode requires business account activation.",
+      "reason": "Original value 'Instant sandbox self-serve credentials available; live production access requires compliance setup.' corrected to verified value 'Instant test mode API keys available self-serve; live mode requires business account activation.' based on independent ground truth."
+    }
+  ],
+  "evidence_failures_list": [
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "url": "https://slack.com",
+      "status": "Fetch Error",
+      "details": "IncompleteRead(66270 bytes read)"
+    },
+    {
+      "app_id": 24,
+      "app": "Lark (Larksuite)",
+      "url": "https://open.larksuite.com",
+      "status": "HTTP 200",
+      "details": "URL content too short (9 chars)."
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 32,
+      "app": "Meta Ads",
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 34,
+      "app": "GoHighLevel",
+      "url": "https://highlevel.stoplight.io",
+      "status": "HTTP 200",
+      "details": "URL content too short (9 chars)."
+    },
+    {
+      "app_id": 39,
+      "app": "Threads (Meta)",
+      "url": "https://developers.facebook.com/docs/threads",
+      "status": "HTTP 400",
+      "details": "HTTP Error 400: Bad Request"
+    },
+    {
+      "app_id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "status": "HTTP 403",
+      "details": "HTTP Error 403: Forbidden"
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "url": "https://gumroad.com/api",
+      "status": "HTTP 200",
+      "details": "URL content too short (3 chars)."
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "url": "https://seranking.com/api",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "url": "https://neo4j.com/docs/api",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "url": "https://binance-docs.github.io",
+      "status": "HTTP 404",
+      "details": "HTTP Error 404: Not Found"
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "url": "https://NMI-powered",
+      "status": "Fetch Error",
+      "details": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "url": "https://pitchbook.com",
+      "status": "HTTP 403",
+      "details": "HTTP Error 403: Forbidden"
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "status": "Fetch Error",
+      "details": "IncompleteRead(294912 bytes read)"
+    }
+  ]
+}

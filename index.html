@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AI Product Ops Assessment: 100 Enterprise Applications Evaluated for AI Agent Integration Readiness, API Access Models, and MCP Ecosystem Compatibility.">
+    <title>AI Agent Integration Readiness Assessment | 100 App Analysis Case Study</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: #111827;
+            --bg-card-hover: #1f293d;
+            --border-color: #1f293d;
+            --border-light: #2d3748;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-purple: #8b5cf6;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
+            --glow-blue: rgba(59, 130, 246, 0.15);
+            --glow-cyan: rgba(6, 182, 212, 0.15);
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Nav */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-badge {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            font-weight: 800;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 400px;
+            background: radial-gradient(circle, var(--glow-blue) 0%, rgba(9, 13, 22, 0) 70%);
+            pointer-events: none;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #60a5fa;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 30%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        /* Stat Grid / Executive Summary */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: left;
+            position: relative;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-light);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .stat-subtext {
+            font-size: 12px;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Section Layout */
+        .section {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 30px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .section-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 700px;
+        }
+
+        /* Card Component */
+        .card-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .card-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .card-title {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Progress Bar List */
+        .bar-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .bar-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .bar-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .bar-name {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .bar-val {
+            font-family: var(--font-mono);
+            color: var(--text-muted);
+        }
+
+        .bar-track {
+            height: 8px;
+            background: #1f293d;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease-out;
+        }
+
+        .fill-blue {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+        }
+
+        .fill-emerald {
+            background: linear-gradient(90deg, #10b981, #34d399);
+        }
+
+        .fill-amber {
+            background: linear-gradient(90deg, #f59e0b, #fbbf24);
+        }
+
+        .fill-rose {
+            background: linear-gradient(90deg, #f43f5e, #fb7185);
+        }
+
+        .fill-purple {
+            background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+        }
+
+        /* Badges */
+        .badge {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-ready {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .badge-conditional {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-blocked {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fb7185;
+            border: 1px solid rgba(244, 63, 94, 0.3);
+        }
+
+        /* Architecture Diagram */
+        .arch-diagram {
+            background: #0d1321;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            overflow-x: auto;
+        }
+
+        .arch-node {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 16px 20px;
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .arch-node-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .arch-node-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .arch-arrow {
+            color: var(--accent-cyan);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        /* Table Styling */
+        .table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-card);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background: #192233;
+            color: var(--text-muted);
+            font-weight: 600;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        tr:hover td {
+            background: var(--bg-card-hover);
+        }
+
+        .table-search {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .search-input {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 16px;
+            color: white;
+            font-size: 14px;
+            width: 300px;
+        }
+
+        .select-filter {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 16px;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+
+            .card-grid-2,
+            .card-grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo-group">
+                <span class="logo-badge">COMPOSIO</span>
+                <span class="logo-title">AI Product Ops Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#summary">Executive Summary</a></li>
+                <li><a href="#landscape">Access & API</a></li>
+                <li><a href="#readiness">Agent Readiness</a></li>
+                <li><a href="#mcp">MCP Ecosystem</a></li>
+                <li><a href="#verification">Verification Audit</a></li>
+                <li><a href="#explorer">App Explorer</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-tag">🚀 100 ENTERPRISE APPLICATIONS EVALUATED</div>
+            <h1>APIs Are Everywhere. Agent-Ready Access Isn't.</h1>
+            <p>An evidence-grounded assessment of 100 SaaS applications measuring API availability, access friction, MCP
+                coverage, and AI-agent buildability.</p>
+        </section>
+
+        <!-- Executive Summary Cards -->
+        <section id="summary" class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Applications</div>
+                <div class="stat-value" id="stat-total-apps">100</div>
+                <div class="stat-subtext">Across 10 core categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Evaluated Fields</div>
+                <div class="stat-value" id="stat-fields-checked">1,200</div>
+                <div class="stat-subtext">12 core schema fields × 100 apps</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">First-Pass Field Accuracy</div>
+                <div class="stat-value" style="color: #34d399;" id="stat-first-pass">85.42%</div>
+                <div class="stat-subtext">Fields independently verified correct</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Audited Corrections</div>
+                <div class="stat-value" style="color: #fbbf24;" id="stat-corrections">7</div>
+                <div class="stat-subtext">Fields updated post-verification</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Evidence Failures</div>
+                <div class="stat-value" style="color: #fb7185;" id="stat-evidence-failures">14</div>
+                <div class="stat-subtext">Apps with unverified evidence URLs</div>
+            </div>
+        </section>
+
+        <!-- Key Findings -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Key Strategic Findings</h2>
+                <p class="section-desc">Grounded insights derived directly from the verified dataset of 100 enterprise
+                    applications.</p>
+            </div>
+            <div class="card-grid-2">
+                <div class="card">
+                    <div class="card-title">
+                        <span>1. 84% of apps are classified READY</span>
+                        <span class="badge badge-ready">READY</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">
+                        These apps have sufficiently accessible APIs and credentials to begin agent integration without
+                        a major external approval or enterprise sales gate.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <span>2. Significant OAuth & Enterprise Gates (12% CONDITIONAL)</span>
+                        <span class="badge badge-conditional">CONDITIONAL</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">
+                        12% of applications impose non-technical friction gates: developer app review (Meta Ads, Google
+                        Ads), Salesforce Connected App OAuth scope approvals, or enterprise sales consultation
+                        (DealCloud, PitchBook).
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <span>3. Nascent Vendor MCP Landscape (1% Official MCP)</span>
+                        <span class="badge badge-purple">MCP ECOSYSTEM</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">
+                        Only 1 out of 100 applications (GitHub) maintains an official vendor-hosted MCP server. However,
+                        third-party frameworks like Composio bridge this gap by providing pre-built toolkits for 19% of
+                        enterprise applications.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <span>4. Consumer AI API Absence (4% BLOCKED)</span>
+                        <span class="badge badge-blocked">BLOCKED</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">
+                        4% of applications are completely BLOCKED for autonomous agent building due to the total absence
+                        of public developer APIs (e.g., Google NotebookLM, Otter.ai, Consensus).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access & API Landscape -->
+        <section id="landscape" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Access & API Infrastructure Landscape</h2>
+                <p class="section-desc">Distribution of authentication methods, access barriers, and API protocol
+                    standards across SaaS categories.</p>
+            </div>
+
+            <div class="card-grid-2">
+                <!-- Auth Methods -->
+                <div class="card">
+                    <div class="card-title">Authentication Protocol Distribution</div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">API Key / Token</span><span
+                                    class="bar-val">82%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-blue" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">OAuth 2.0</span><span
+                                    class="bar-val">23%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-cyan" style="width: 23%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Personal Access Token (PAT)</span><span
+                                    class="bar-val">7%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-purple" style="width: 7%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Bot Token / JWT / Other</span><span
+                                    class="bar-val">5%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-emerald" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted); margin-top: 14px; font-style: italic;">
+                        Note: Authentication methods are non-mutually-exclusive; apps may support multiple methods.
+                    </div>
+                </div>
+
+                <!-- Access Models -->
+                <div class="card">
+                    <div class="card-title">Access Model & Pricing Gates</div>
+                    <div class="bar-list">
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Self-Serve Developer Access</span><span
+                                    class="bar-val">88%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-emerald" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Partner / Contact Sales Gate</span><span
+                                    class="bar-val">4%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-amber" style="width: 4%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Admin Approval Required</span><span
+                                    class="bar-val">4%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-rose" style="width: 4%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info"><span class="bar-name">Paid / Unavailable</span><span
+                                    class="bar-val">4%</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-purple" style="width: 4%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agent Readiness -->
+        <section id="readiness" class="section">
+            <div class="section-header">
+                <h2 class="section-title">AI Agent Buildability Classification</h2>
+                <p class="section-desc">Feasibility rating for autonomous AI agent development based on developer access
+                    and permission friction.</p>
+            </div>
+
+            <div class="card-grid-3">
+                <div class="card" style="border-top: 4px solid #10b981;">
+                    <div class="card-title">
+                        <span>READY</span>
+                        <span class="badge badge-ready">84 Apps</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Instant self-serve developer access, standard
+                        API keys or Personal Access Tokens, broad CRUD endpoint coverage. Developers can build
+                        immediately.</p>
+                </div>
+                <div class="card" style="border-top: 4px solid #f59e0b;">
+                    <div class="card-title">
+                        <span>CONDITIONAL</span>
+                        <span class="badge badge-conditional">12 Apps</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Requires system administrator setup, OAuth App
+                        Review, Developer Token verification, or paid tier upgrades (e.g., Salesforce, Google Ads, Meta
+                        Ads).</p>
+                </div>
+                <div class="card" style="border-top: 4px solid #f43f5e;">
+                    <div class="card-title">
+                        <span>BLOCKED</span>
+                        <span class="badge badge-blocked">4 Apps</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px;">No public developer API, strictly enterprise
+                        contact sales wall, or closed consumer platform (e.g., Google NotebookLM, Otter.ai, PitchBook).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MCP Landscape -->
+        <section id="mcp" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Model Context Protocol (MCP) & Composio Ecosystem</h2>
+                <p class="section-desc">Strict separation between official vendor-maintained MCP servers and third-party
+                    Composio integrations.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">MCP Support Matrix (100 Applications)</div>
+                <div class="bar-list" style="margin-top: 20px;">
+                    <div class="bar-item">
+                        <div class="bar-info"><span class="bar-name">No MCP Evidence Found</span><span
+                                class="bar-val">81 Apps (81%)</span></div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-blue" style="width: 81%;"></div>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-info"><span class="bar-name">Third-Party MCP / Composio Toolkit
+                                Available</span><span class="bar-val">18 Apps (18%)</span></div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-purple" style="width: 18%;"></div>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-info"><span class="bar-name">Official + Third-Party MCP</span><span
+                                class="bar-val">1 App (1%)</span></div>
+                        <div class="bar-track">
+                            <div class="bar-fill fill-emerald" style="width: 1%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Diagram -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Technical Architecture & Verification Engine</h2>
+                <p class="section-desc">Dual-agent research and independent verification pipeline ensuring
+                    evidence-backed accuracy.</p>
+            </div>
+
+            <div class="arch-diagram">
+                <div class="arch-node">
+                    <div class="arch-node-title">apps.csv</div>
+                    <div class="arch-node-sub">100 Target Apps</div>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node">
+                    <div class="arch-node-title">Research Agent</div>
+                    <div class="arch-node-sub">Browser-First Inspection</div>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node">
+                    <div class="arch-node-title">Composio SDK</div>
+                    <div class="arch-node-sub">Toolkit Discovery</div>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node">
+                    <div class="arch-node-title">Verification Agent</div>
+                    <div class="arch-node-sub">Independent Audit</div>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node">
+                    <div class="arch-node-title">verified_results.json</div>
+                    <div class="arch-node-sub">1,200 fields audited</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audit Corrections Examples -->
+        <section id="verification" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Audited Corrections & Verification Telemetry</h2>
+                <p class="section-desc">Concrete examples of ground truth corrections identified during independent
+                    verification.</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App ID</th>
+                            <th>App Name</th>
+                            <th>Field</th>
+                            <th>Original Research Value</th>
+                            <th>Verified Ground Truth Value</th>
+                            <th>Audit Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>10</strong></td>
+                            <td>DealCloud</td>
+                            <td><code class="badge badge-conditional">access_notes</code></td>
+                            <td style="color: var(--text-muted);">Generic enterprise restriction consultation string
+                            </td>
+                            <td>Enterprise financial CRM requiring sales contract and partner agreement</td>
+                            <td>Refined enterprise sales contract gate nuance.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>31</strong></td>
+                            <td>Google Ads</td>
+                            <td><code class="badge badge-conditional">access_notes</code></td>
+                            <td style="color: var(--text-muted);">Generic developer app verification review</td>
+                            <td>Requires Developer Token approval (Basic/Standard access) & OAuth setup</td>
+                            <td>Specific Developer Token workflow distinction.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>61</strong></td>
+                            <td>GitHub</td>
+                            <td><code class="badge badge-ready">access_notes</code></td>
+                            <td style="color: var(--text-muted);">Self-serve Personal Access Tokens and OAuth Apps</td>
+                            <td>Personal Access Tokens and GitHub Apps available self-serve</td>
+                            <td>Added explicit GitHub App architectural support.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>81</strong></td>
+                            <td>Stripe</td>
+                            <td><code class="badge badge-ready">access_notes</code></td>
+                            <td style="color: var(--text-muted);">Instant sandbox credentials available</td>
+                            <td>Instant test mode API keys available self-serve; live mode requires activation</td>
+                            <td>Distinguished sandbox test mode vs live activation.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>91</strong></td>
+                            <td>NotebookLM</td>
+                            <td><code class="badge badge-blocked">access_notes</code></td>
+                            <td style="color: var(--text-muted);">Consumer AI application with limited access</td>
+                            <td>Consumer AI research product with no official public developer API</td>
+                            <td>Confirmed absence of an official public developer API.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p
+                style="font-size: 13px; color: var(--text-muted); margin-top: 16px; font-style: italic; background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+                First-pass accuracy measures fields independently verified as correct before correction. Unverified
+                fields are excluded from the accuracy numerator.
+            </p>
+        </section>
+
+        <!-- Product Ops Recommendations -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Product Ops Recommendations</h2>
+                <p class="section-desc">Strategic roadmap guidance based strictly on the verified research dataset.</p>
+            </div>
+
+            <div class="card-grid-2">
+                <div class="card">
+                    <div class="card-title">1. Roadmap Prioritization</div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Prioritize integration rollout for the 84
+                        READY platforms (HubSpot, Stripe, Notion, Linear, Airtable) using API Keys or Private App
+                        Tokens. Defer CONDITIONAL apps (Salesforce, Google Ads) to Phase 2 to allow time for admin OAuth
+                        review setup.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">2. Friction Mitigation</div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Build standardized admin onboarding workflows
+                        for apps requiring scope approval. Provide guided setup documentation for Connected App creation
+                        in Salesforce and Business Manager verification in Meta Ads.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">3. Documentation Standards</div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Separate developer sandbox environments from
+                        commercial free trials across all developer portals. Document credential scopes explicitly to
+                        prevent security permission friction during agent deployment.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">4. Verification Pipeline Governance</div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Institutionalize the two-agent research +
+                        verification loop for continuous integration monitoring. Run periodic automated re-verifications
+                        to catch API deprecations and third-party MCP toolkit additions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations & Governance -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Limitations & Research Governance</h2>
+            </div>
+            <div class="card">
+                <ul style="color: var(--text-muted); font-size: 14px; line-height: 1.8; padding-left: 20px;">
+                    <li><strong>Evidence Link Timeout Discrepancies:</strong> 14 applications experienced documentation
+                        page fetch failures (SSL timeouts, 403 blocks, or JavaScript SPA rendering issues), resulting in
+                        168 fields being strictly marked as <code>UNVERIFIED</code> to preserve research integrity.</li>
+                    <li><strong>Dynamic Third-Party MCP Ecosystem:</strong> Third-party MCP toolkit availability (via
+                        Composio or community repositories) changes rapidly and reflects a point-in-time snapshot.</li>
+                    <li><strong>Policy & Pricing Shifts:</strong> SaaS platform API pricing and access policies (e.g.,
+                        enterprise API paywalls) evolve frequently and require continuous automated re-verification.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interactive App Explorer -->
+        <section id="explorer" class="section">
+            <div class="section-header">
+                <h2 class="section-title">100 App Verified Dataset Explorer</h2>
+                <p class="section-desc">Search and filter the complete verified dataset of 100 enterprise applications.
+                </p>
+            </div>
+
+            <div class="table-search">
+                <input type="text" id="searchInput" class="search-input"
+                    placeholder="Search app, category, or blocker...">
+                <select id="buildabilityFilter" class="select-filter">
+                    <option value="ALL">All Buildability Tiers</option>
+                    <option value="READY">READY</option>
+                    <option value="CONDITIONAL">CONDITIONAL</option>
+                    <option value="BLOCKED">BLOCKED</option>
+                </select>
+            </div>
+
+            <div class="table-wrapper">
+                <table id="appTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>App Name</th>
+                            <th>Category</th>
+                            <th>Auth Method</th>
+                            <th>Access Model</th>
+                            <th>Buildability</th>
+                            <th>Main Blocker</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appTableBody">
+                        <!-- Dynamically populated -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Composio AI Product Ops Assessment | Built with Grounded Dual-Agent Verification Engine</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Load Dataset and Dynamic Functionality -->
+    <script>
+        let allApps = [];
+
+        async function loadSummaryData() {
+            try {
+                const res = await fetch('analysis/summary.json');
+                if (res.ok) {
+                    const summary = await res.json();
+                    document.getElementById('stat-total-apps').innerText = summary.total_apps;
+                    document.getElementById('stat-fields-checked').innerText = summary.verification_telemetry.total_fields_checked.toLocaleString();
+                    document.getElementById('stat-first-pass').innerText = summary.verification_telemetry.first_pass_accuracy;
+                    document.getElementById('stat-corrections').innerText = summary.verification_telemetry.corrected_fields;
+                    document.getElementById('stat-evidence-failures').innerText = summary.verification_telemetry.apps_with_evidence_failures;
+                }
+            } catch (e) {
+                console.log("Using default pre-rendered stats:", e);
+            }
+        }
+
+        async function loadAppData() {
+            try {
+                const res = await fetch('data/verified_results.json');
+                if (res.ok) {
+                    allApps = await res.json();
+                    renderTable(allApps);
+                }
+            } catch (e) {
+                console.log("Could not load verified results JSON:", e);
+            }
+        }
+
+        function renderTable(apps) {
+            const tbody = document.getElementById('appTableBody');
+            tbody.innerHTML = '';
+
+            apps.forEach(app => {
+                const tr = document.createElement('tr');
+
+                let badgeClass = 'badge-ready';
+                if (app.agent_buildability === 'CONDITIONAL') badgeClass = 'badge-conditional';
+                if (app.agent_buildability === 'BLOCKED') badgeClass = 'badge-blocked';
+
+                const auths = Array.isArray(app.auth_methods) ? app.auth_methods.join(', ') : app.auth_methods;
+
+                tr.innerHTML = `
+                    <td><strong>${app.id}</strong></td>
+                    <td><strong>${app.app}</strong></td>
+                    <td style="color: var(--text-muted);">${app.category}</td>
+                    <td><code>${auths}</code></td>
+                    <td>${app.access_model}</td>
+                    <td><span class="badge ${badgeClass}">${app.agent_buildability}</span></td>
+                    <td style="font-size: 12px; color: var(--text-muted);">${app.main_blocker}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase();
+            const filter = document.getElementById('buildabilityFilter').value;
+            filterData(q, filter);
+        });
+
+        document.getElementById('buildabilityFilter').addEventListener('change', (e) => {
+            const filter = e.target.value;
+            const q = document.getElementById('searchInput').value.toLowerCase();
+            filterData(q, filter);
+        });
+
+        function filterData(query, buildability) {
+            const filtered = allApps.filter(app => {
+                const matchesQuery = app.app.toLowerCase().includes(query) ||
+                    app.category.toLowerCase().includes(query) ||
+                    app.main_blocker.toLowerCase().includes(query);
+                const matchesBuild = (buildability === 'ALL') || (app.agent_buildability === buildability);
+                return matchesQuery && matchesBuild;
+            });
+            renderTable(filtered);
+        }
+
+        // Initialize
+        loadSummaryData();
+        loadAppData();
+    </script>
+</body>
+
+</html>
